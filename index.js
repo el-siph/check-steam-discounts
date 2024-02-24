@@ -1,7 +1,7 @@
 import express from "express";
 import { checkForDiscounts } from "./server.js";
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3333;
 
 app.get("/", (req, res) => {
   return res.send("Not a valid endpoint");
